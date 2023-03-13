@@ -8,7 +8,6 @@
     "cjs",
     "dist"
   ],
-  "type": "module",
   "main": "es2017/index.js",
   "module": "es2017/index.js",
   "types": "es2017/index.d.ts",
@@ -34,15 +33,18 @@
     "eslint:fix": "npm run eslint -- --fix"
   },
   "keywords": [
-    "icepkg",
     "js",
     "node",
     "library"
   ],
+  "dependencies": {
+    "@swc/helpers": "^0.4.14"
+  },
   "devDependencies": {
-    "@ice/pkg": "^1.0.0",
-    "@iceworks/spec": "^1.0.0",
-    "eslint": "^7.0.0"
+    "@ice/pkg": "^1.5.3",
+    "@ice/pkg-plugin-docusaurus": "^1.4.4",
+    "@iceworks/spec": "^1.6.0",
+    "eslint": "^8.36.0"
   },
   "publishConfig": {
     "access": "public"
